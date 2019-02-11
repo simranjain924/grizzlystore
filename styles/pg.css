@@ -1,0 +1,262 @@
+.navbar
+{
+ 
+    height: 80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+.navbar #logoutbtn
+{
+    border-radius: 100px;
+    margin-top: 7px;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+}
+.navbar-brand
+{
+    font-size: 25px;
+}
+.navbar form
+{
+    margin-left: 100px;
+}
+.navbar #r
+{
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    padding-left: 15px;
+    padding-right: 30px;
+    width: 350px;
+   
+}
+.navbar #rr
+{
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+  
+}
+.navbar li
+{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#profilecard
+{
+    margin-top: 60px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  #profilecard h3 {
+    color: grey;
+    font-size: 18px;
+  }
+#profilecard p{
+    padding-bottom: 20px;
+}
+#profilecard #pro
+{
+    text-align: left;
+    background: #B6DCE0;
+    padding-top: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 13px;
+    font-size: 18px;
+    padding-left: 20px;
+}
+  
+/* #profilecard button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  } 
+  
+   #profilecard a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  } 
+  
+  #profilecard button:hover, a:hover {
+    opacity: 0.7;
+  } */
+  
+#tabb
+{
+    margin-top: 60px;
+}
+.carousel-control.left, .carousel-control.right {
+    background-image:none !important;
+    filter:none !important;
+ }
+#myCarousel
+{
+    height: 472px;
+   
+}
+#myCarousel img
+{
+    height: 472px;
+    
+}
+#form
+{
+    margin-top: 100px;
+}
+#form .form-control
+{
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+#addbtn
+{
+    border-radius: 100px;
+    position: fixed;
+    bottom: 150px;
+    right: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+#cancelbtn 
+{
+    border-radius: 100px;
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+}
+#finishbtn
+{
+    border-radius: 100px;
+    position: fixed;
+    bottom: 150px;
+    right: 100px;
+    padding-left: 33px;
+    padding-right: 33px;
+}
+.nav-pills > li > a
+{
+    background-color: #B6DCE0 ;
+}    
+.nav-pills > li > a:hover 
+{
+    background-color: rgb(213, 225, 226) ;
+}
+.nav-pills > li > a
+{
+    height: 50px;
+   padding-top: 16px;
+}
+#des
+{
+    margin-top: 100px;
+   
+}
+
+#des p
+{
+    font-size: 13px;
+ text-align: justify;
+   line-height: 20px;
+}
+#myInput {
+    
+  }
+  
+  #myTable {
+    border-collapse: collapse; /* Collapse borders */
+    width: 100%; /* Full-width */
+    border: 1px solid #ddd; /* Add a grey border */
+    font-size: 18px; /* Increase font-size */
+  }
+  
+  #myTable th, #myTable td {
+    text-align: left; /* Left-align text */
+    padding: 12px; /* Add padding */
+  }
+  
+  
+  
+   #myTable tr:hover {
+    /* Add a grey background color to the table header and on hover */
+    background-color: #f1f1f1;
+  }
+  #vendors .navbar-form
+  {
+      padding-left: 0px;
+      margin-top: 60px;
+      margin-bottom: 60px;
+  }
+  #myInput1
+  {
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-right: 0px;
+    padding-left: 15px;
+    padding-right: 30px;
+    width: 300px;
+  }
+  #mi1
+  {
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-left: 0px;
+  }
+  #myInput2
+  {
+    border-radius: 100px;
+    margin-left: 100px;
+    padding-left: 15px;
+    padding-right: 30px;
+    width: 250px;
+  }
+ 
+  #vendors table
+  {
+      border: 3px solid white;
+      
+  }
+  #vendors td, th
+  {
+      border: 1px solid rgb(205, 214, 214);
+  }
+  #viewbtn
+  {
+    border-radius: 100px; 
+    padding-left: 20px;
+    padding-right: 20px;
+   
+    float: left;
+  }
+  #blockbtn
+  {
+    border-radius: 100px; 
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 55px;
+   
+  }
+  #removebtn
+  {
+    border-radius: 100px; 
+    padding-left: 20px;
+    padding-right: 20px;
+    float: right;
+    
+    
+  }

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Page 4</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="styles/pg.css" >
+        <script>
+          function myFunction() {
+                // Declare variables 
+                var input, filter, table, tr, td, i, txtValue;
+                input = document.getElementById("myInput1");
+                filter = input.value.toUpperCase();
+                table = document.getElementById("myTable");
+                tr = table.getElementsByTagName("tr");
+
+                // Loop through all table rows, and hide those who don't match the search query
+                for (i = 0; i < tr.length; i++) {
+                  td = tr[i].getElementsByTagName("td")[0];
+                  if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                      tr[i].style.display = "";
+                    } else {
+                      tr[i].style.display = "none";
+                    }
+                  } 
+                }
+              }
+        </script>
+        
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row" >
+                <nav class="navbar navbar-inverse ">
+                    <div class="container-fluid">
+                      <div class="navbar-header">
+                        <a class="navbar-brand" href="#" style="margin-top: 1px; margin-bottom: 7px">&nbsp;GRIZZLY &nbsp; &nbsp;<span><img src="images/logo.png"  width="50px" height="50px" /></span>  &nbsp; &nbsp;STORE</a>
+                      </div>
+                      
+                      <form class="navbar-form navbar-left" action="" >
+                        <div class="input-group" style="margin-top: 15px ; margin-bottom: 7px">
+                          <input type="text" class="form-control" placeholder="Search" name="search" id="r">
+                          <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit" id="rr">
+                              <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </form>
+                      <ul class="nav navbar-nav navbar-right">
+                        <li class="" style="margin-top: 15px;  margin-bottom: 7px"><a href="#"><span class="glyphicon glyphicon-bell"></span></a></li>
+                        <li><a href="#" style="margin-top: 15px;  margin-bottom: 7px">Welcome Admin(name).. </a></li>
+                        <li><a href="#"><button type="submit" class="btn btn-primary" id="logoutbtn">Logout</button></a></li>
+                      </ul>
+                    </div>
+                </nav>                  
+            </div> <!--end of navbar-->
+
+            <div class="row">
+                <div class="container-fluid">
+                    <div class="col-md-3" id="profilecard">
+                        <div class="card">
+                            <p id="pro">PROFILE <button type="button" class="btn btn-basic" style="float: right;padding-top: 2px;padding-bottom: 4px;margin-right: 10px;">Edit</button></p>
+                            <img src="images/profile.jfif" alt="John" style="width:100%">
+                            <h1>Helen Doe</h1>
+                            <h3>ID</h3>
+                            <p>GRZLY17234</p>
+                            <h3>Designation</h3>
+                            <p>Sr. Admin</p>
+                            <h3>Office</h3>
+                            <p>NYC, NY, USA</p>
+                            <br><br>
+                           <!-- <a href="#"><i class="fa fa-dribbble"></i></a> 
+                            <a href="#"><i class="fa fa-twitter"></i></a> 
+                            <a href="#"><i class="fa fa-linkedin"></i></a> 
+                            <a href="#"><i class="fa fa-facebook"></i></a> 
+                           <p><button>Contact</button></p> -->
+                        </div>
+                    </div> <!--end of profile card-->
+                    <div class="col-md-7" id="tabb">
+                        <ul class="nav nav-pills nav-justified">
+                            <li class="active"><a data-toggle="pill" href="#products">PRODUCTS</a></li>
+                            <li><a data-toggle="pill" href="#vendors">VENDORS</a></li>
+                            <li><a data-toggle="pill" href="#category">CATEGORY</a></li>
+                        </ul>
+                          
+                          <div class="tab-content">
+                            <div id="products" class="tab-pane fade in active">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                            <p style="margin-top:40px;margin-bottom:2px;">
+                                               <b><span style="font-size: 20px">Laptop</span></b> 
+                                               <span style="font-size: 15px"> &nbsp;&nbsp;by Philips&nbsp;</span>
+                                               <span class="glyphicon glyphicon-ok-sign"></span>
+                                               <br>
+                                               <p style="color:grey">&nbsp;<span class="glyphicon glyphicon-star"></span> 4.7</p>
+                                            </p>
+                                            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                                    <!-- Indicators -->
+                                                    <ol class="carousel-indicators">
+                                                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                                      <li data-target="#myCarousel" data-slide-to="1"></li>
+                                                      <li data-target="#myCarousel" data-slide-to="2"></li>
+                                                    </ol>
+                                                  
+                                                    <!-- Wrapper for slides -->
+                                                    <div class="carousel-inner">
+                                                      <div class="item active">
+                                                        <img src="images/2.jpeg" alt="Product Image">
+                                                      </div>
+                                                  
+                                                      <div class="item">
+                                                        <img src="images/1.jpeg" alt="Product Image">
+                                                      </div>
+                                                  
+                                                      <div class="item">
+                                                        <img src="images/3.jpeg" alt="Product Image">
+                                                      </div>
+                                                    </div>
+                                                  
+                                                    <!-- Left and right controls -->
+                                                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                                      <span class="glyphicon glyphicon-chevron-left"></span>
+                                                      <span class="sr-only">Previous</span>
+                                                    </a>
+                                                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                                      <span class="glyphicon glyphicon-chevron-right"></span>
+                                                      <span class="sr-only">Next</span>
+                                                    </a>
+                                                  </div>
+                                    
+                                    </div>
+
+                                    <div class="col-md-4" id="des">
+                                            <div class="panel-group">
+                                                    <div class="panel panel-info">
+                                                        <div class="panel-heading"><h4>Product Description <span class="glyphicon glyphicon-ok-sign"></span></h4></div>
+                                                        <div class="panel-body"><p>It runs on Windows 8.1 64 bit OS, a dual-core 1.7 GHz Intel Core i5 processor and Intel HD graphics 4400 processor. The laptop has a 15.6 inch HD LED backlit display with Truelife and 1366 x 768 pixels resolution. It has 1 TB HDD, 4GB DDR3 RAM and built-in DVD drive.
+                                                                Dell Inspiron 15 3542 4th Gen Intel Core i5 is a stylish5 3542 Dell Inspiron 15 3542 4th Gen Intel Core i5 is a stylish and powerful Mainstream Laptop  4th Gen Intel Core i5 is a stylish and powerful Mainstream Laptop  and is powered by Intel Core i5 (4th generation) processor .
+                                                        </p><br><br><br><br><br>
+                                                        </div>
+                                                        <div class="panel-footer"><span style="font-size:  20px">Rs. XXXX/- &nbsp;&nbsp;</span><span>15%off &nbsp;&nbsp;<span class="glyphicon glyphicon-ok-sign"></span></span></div>
+                                                    </div>
+                                            </div>
+                                    </div>
+
+                                </div>
+                            </div> <!--end of products-->
+
+                            <div id="vendors" class="tab-pane fade">
+                               
+                                
+                                    <form class="navbar-form navbar-left" action="">
+                                      <div class="input-group">
+                                        <input type="text" class="form-control" id="myInput1" onkeyup="myFunction()" placeholder="Search by Name / ID..">
+                                        <div class="input-group-btn">
+                                          <button class="btn btn-default" type=""  id="mi1">
+                                            <i class="glyphicon glyphicon-search"></i>
+                                          </button>
+                                        </div>
+                                        
+                                        
+                                            
+                                            <select class="form-control" id="myInput2">
+                                                <option>Filter by..</option>
+                                              <option>1</option>
+                                              <option>2</option>
+                                              <option>3</option>
+                                              <option>4</option>
+                                            </select>
+                                          
+                                      </div>
+                                    </form>
+
+                                  <table id="myTable">
+                                    <tr class="header">
+                                      <th style="width: 20%">Vendor Name</th>
+                                      <th style="width: 15%">ID</th>
+                                      <th style="width: 15%">Location</th>
+                                      <th style="width: 15%">Contact</th>
+                                      <th></th>
+                                    </tr>
+                                    <tr>
+                                      <td>M/S Agarwal</td>
+                                      <td>MUM2134</td>
+                                      <td>Mumbai</td>
+                                      <td>1234567</td>
+                                      <td><button type="button" class="btn btn-info" id="viewbtn">View</button>
+                                          <button type="button" class="btn btn-danger" id="blockbtn">Block</button>
+                                          <button type="button" class="btn btn-warning" id="removebtn">Remove</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>M/S Saravanam</td>
+                                        <td>BLR3421</td>
+                                        <td>Bangaluru</td>
+                                        <td>1234567</td>
+                                        <td><button type="button" class="btn btn-info" id="viewbtn">View</button>
+                                          <button type="button" class="btn btn-danger" id="blockbtn">Block</button>
+                                          <button type="button" class="btn btn-warning" id="removebtn">Remove</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>M/S Techshop</td>
+                                        <td>HYD1290</td>
+                                        <td>Hyderabad</td>
+                                        <td>1234567</td>
+                                        <td><button type="button" class="btn btn-info" id="viewbtn">View</button>
+                                        <button type="button" class="btn btn-danger" id="blockbtn">Block</button>
+                                        <button type="button" class="btn btn-warning" id="removebtn">Remove</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>M/S eStore</td>
+                                        <td>CHN4564</td>
+                                        <td>Chennai</td>
+                                        <td>1234567</td>
+                                        <td><button type="button" class="btn btn-info" id="viewbtn">View</button>
+                                          <button type="button" class="btn btn-danger" id="blockbtn">Block</button>
+                                          <button type="button" class="btn btn-warning" id="removebtn">Remove</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>M/S Apac</td>
+                                        <td>DEL1209</td>
+                                        <td>Delhi</td>
+                                        <td>1234567</td>
+                                        <td><button type="button" class="btn btn-info" id="viewbtn">View</button>
+                                          <button type="button" class="btn btn-danger" id="blockbtn">Block</button>
+                                          <button type="button" class="btn btn-warning" id="removebtn">Remove</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>M/S eKart</td>
+                                        <td>BLR4521</td>
+                                        <td>Bangaluru</td>
+                                        <td>1234567</td>
+                                        <td><button type="button" class="btn btn-info" id="viewbtn">View</button>
+                                          <button type="button" class="btn btn-danger" id="blockbtn">Block</button>
+                                          <button type="button" class="btn btn-warning" id="removebtn">Remove</button></td>
+                                    </tr>
+                                  </table>
+                            </div> <!--end of vendors-->
+
+                            <div id="category" class="tab-pane fade">
+                                <h3>Category</h3>
+                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                            </div> <!--end of category-->
+
+                    </div> <!--end of tabb-->
+                    <div class="col-md-2" id="add">
+                            <button type="" class="btn btn-primary" id="finishbtn">Finish</button>
+                            <br>
+                            <button type="" class="btn btn-warning" id="cancelbtn">Cancel</button>
+                    </div> <!--end of add-->
+                </div>
+            </div>
+        </div> <!--end of container-fluid-->
+    </body>
+</html>
